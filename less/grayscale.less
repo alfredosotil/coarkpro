@@ -113,21 +113,55 @@ a {
         color: black;
     }
     .nav {
+/*        .menu-item{
+            display: inline-block;
+            a{
+                padding: 10px 15px;
+                position: relative;
+                display: block;
+                color: @body-color;
+                text-transform: uppercase;
+
+                &:after{
+                    content:"/";
+                    color: @muted-color;
+                    position: absolute;
+                    right:0;
+                }
+            }
+
+            &:last-child a:after{display: none}
+
+            &.current-menu-item,&:hover{
+                a{
+                    color: @accent-color;
+                    border-bottom: 2px solid @accent-color;
+                }
+            }
+        }*/
         li {
             a {
                 -webkit-transition: background .3s ease-in-out;
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
+                &:after{
+                    content:"/";
+                    color: @muted-color;
+                    position: absolute;
+                    right:0;
+                }
                 &:hover {
                     color: fade(blue, 80%);
                     outline: none;
                     background-color: transparent;
+                    border-bottom: 2px solid @accent-color;
                 }
                 &:focus,
                     &:active {
                     outline: none;
                     background-color: transparent;
                 }
+                &:last-child :after{display: none;}
             }
             &.active {
                 outline: none;
@@ -153,13 +187,13 @@ a {
             background: white;
             border-bottom: 1px solid fade(white, 30%);
             #logo {
-                
+
                 background-size: 49px 40px;
                 width: 49px;
                 height: 40px; 
                 -webkit-transition: background .1s ease-in-out,padding .1s ease-in-out;
-        -moz-transition: background .1s ease-in-out,padding .1s ease-in-out;
-        transition: background .1s ease-in-out,padding .1s ease-in-out;
+                -moz-transition: background .1s ease-in-out,padding .1s ease-in-out;
+                transition: background .1s ease-in-out,padding .1s ease-in-out;
             }
 
         }
@@ -192,7 +226,7 @@ a {
     background-size: cover;
     -o-background-size: cover;    
     .intro-body {
-        display: table-cell;
+        display: table-cell; 
         /*vertical-align: middle;*/
         padding: 100px 0 100px 0;
         .intro-lead-in {
@@ -408,4 +442,110 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: fade(white, 20%);
+}
+
+//additional code
+
+.site-header{
+	.clearfix;
+}
+
+#branding{
+	float: left;
+	margin-top: 20px;
+
+	.logo,.logo-text{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.logo{
+		margin-right: 10px;
+	}
+
+	.site-title{
+		.em(18);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin-bottom: 0;
+		a{color: white}
+	}
+	.site-description{
+		.em(11); 
+		color: @muted-color;
+	} 
+}
+
+.main-navigation{
+	float: right; 
+	.menu-toggle{
+		background: none;
+		border: none;
+		color: @body-color;
+		.em(24);
+		display: inline-block;
+		vertical-align: middle;
+		padding: 30px 15px;
+		outline: none;
+
+		@media screen and (min-width: 991px){display:none!important}
+		@media screen and (max-width: 990px){display:block}
+	}
+
+	.menu{
+		display: inline-block;
+
+		@media screen and (min-width: 991px){display:block!important}
+		@media screen and (max-width: 990px){display:none}
+	}
+	.menu-item{
+		display: inline-block;
+
+		a{
+			padding: 40px 15px;
+			position: relative;
+			display: block;
+			color: @body-color;
+			text-transform: uppercase;
+
+			&:after{
+				content:"/";
+				color: @muted-color;
+				position: absolute;
+				right:0;
+			}
+		}
+
+		&:last-child a:after{display: none}
+
+		&.current-menu-item,&:hover{
+			a{
+				color: @accent-color;
+				border-bottom: 2px solid @accent-color;
+			}
+		}
+	}
+}
+
+.mobile-navigation{
+	clear: both;
+	padding: 30px 0;
+	display: none;
+
+	@media screen and (min-width: 991px){display:none!important}
+
+	.menu{
+		list-style: none;
+		padding: 20px;
+		border-top: 2px solid @accent-color;
+		border-bottom: 2px solid @accent-color;
+		text-transform: uppercase;
+
+		a{
+			padding: 10px 0;
+			display: block;
+			color: @body-color;
+		}
+
+		.current-menu-item a{color: @accent-color}
+	}
 }
