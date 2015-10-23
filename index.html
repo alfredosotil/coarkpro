@@ -23,6 +23,7 @@
         <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css' />
         <link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400|" rel="stylesheet" type="text/css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -34,25 +35,28 @@
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
         <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <nav class="navbar site-header navbar-fixed-top" role="navigation">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i>  <span class="light">Site</span> 
-                        <div id="logo" class="wow pulse" style="float: right;" data-wow-iteration="10" data-wow-duration="1000ms"></div>
-                        <!--<span class="blue">CoArkPro</span>-->
-                    </a>
-                </div>
+                <a href="#page-top" id="branding">
+                    <img src="img/logo.png" alt="" class="logo">
+                    <div class="logo-text">
+                        <h1 class="site-title">Soluciones</h1>
+                        <small class="site-description">Tagline goes here</small>
+                    </div>
+                </a> <!-- #branding -->
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden menu-item">
-                            <a href="#page-top"></a>
+                <!-- Default snippet for navigation -->
+                <div class="main-navigation">
+                    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+                    <ul class="menu">
+                        <!--                        <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+                                                <li class="menu-item"><a href="news.html">News</a></li>
+                                                <li class="menu-item"><a href="about.html">About</a></li>
+                                                <li class="menu-item"><a href="project.html">our Projects</a></li>
+                                                <li class="menu-item"><a href="contact.html">Contact</a></li>-->
+
+                        <li class="menu-item current-menu-item">
+                            <a class="page-scroll" href="#page-top">Inicio</a>
                         </li>
                         <li class="menu-item">
                             <a class="page-scroll" href="#about">Nosotros</a>
@@ -61,107 +65,192 @@
                             <a class="page-scroll" href="#services">Servicios</a>
                         </li>
                         <li class="menu-item">
+                            <a class="page-scroll" href="#projects">Proyectos</a>
+                        </li>
+                        <li class="menu-item">
                             <a class="page-scroll" href="#contact">Contacto</a>
                         </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+                    </ul> <!-- .menu -->
+                </div> <!-- .main-navigation -->
+
+                <div class="mobile-navigation"></div>
             </div>
-            <!-- /.container -->
         </nav>
+
+        <!--        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand page-scroll" href="#page-top">
+                                <i class="fa fa-play-circle"></i>  <span class="light">Site</span> 
+                                <div id="logo" class="wow pulse" style="float: right;" data-wow-iteration="10" data-wow-duration="1000ms"></div>
+                                <span class="blue">CoArkPro</span>
+                            </a>
+                        </div>
+        
+                         Collect the nav links, forms, and other content for toggling 
+                        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                            <ul class="nav navbar-nav">
+                                 Hidden li included to remove active class from about link when scrolled up past about section 
+                                <li class="hidden menu-item">
+                                    <a href="#page-top"></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="page-scroll" href="#about">Nosotros</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="page-scroll" href="#services">Servicios</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="page-scroll" href="#contact">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                         /.navbar-collapse 
+                    </div>
+                     /.container 
+                </nav>-->
+
+        <div class="hero hero-slider">
+            <ul class="slides">
+                <li data-bg-image="img/slider/1.jpg">
+                    <div class="container">
+                        <div class="slide-title">
+                            <span>blanditiis deleniti</span> <br>
+                            <span>ducimus deleniti atque</span>
+                        </div>
+                    </div>
+                </li>
+                <li data-bg-image="img/slider/2.jpg">
+                    <div class="container">
+                        <div class="slide-title">
+                            <span>blanditiis deleniti</span> <br>
+                            <span>ducimus deleniti atque</span>
+                        </div>
+                    </div>
+                </li>
+                <li data-bg-image="img/slider/3.jpg">
+                    <div class="container">
+                        <div class="slide-title">
+                            <span>blanditiis deleniti</span> <br>
+                            <span>ducimus deleniti atque</span>
+                        </div>
+                    </div>
+                </li>
+                <li data-bg-image="img/slider/5.jpg">
+                    <div class="container">
+                        <div class="slide-title">
+                            <span>blanditiis deleniti</span> <br>
+                            <span>ducimus deleniti atque</span>
+                        </div>
+                    </div>
+                </li>
+                <li data-bg-image="img/slider/8.jpg">
+                    <div class="container">
+                        <div class="slide-title">
+                            <span>blanditiis deleniti</span> <br>
+                            <span>ducimus deleniti atque</span>
+                        </div>
+                    </div>
+                </li>
+            </ul> <!-- .slides -->
+        </div>
 
         <!-- Intro Header -->
         <header class="intro">
             <div class="intro-body">
-                <div class="container">
-                    <div class="row-fluid">
-<!--                        <div class="col-md-2 col-md-offset-1">
-                            <div id="logo" class="wow pulse" style="" data-wow-iteration="infinite" data-wow-duration="1000ms"></div>
-                        </div>-->
-                        <div class="col-md-8 col-md-offset-2 intro-lead-in">Bienvenido a CoArkPro!</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 col-md-offset-1">            
-                            <div id="carousel-coarkpro" class="carousel slide" data-ride="carousel" style="border-width: 6px; border-style: outset;">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-coarkpro" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-coarkpro" data-slide-to="1"></li>
-                                    <li data-target="#carousel-coarkpro" data-slide-to="2"></li>
-                                    <li data-target="#carousel-coarkpro" data-slide-to="3"></li>
-                                    <li data-target="#carousel-coarkpro" data-slide-to="4"></li>
-                                    <li data-target="#carousel-coarkpro" data-slide-to="5"></li>
-                                    <li data-target="#carousel-coarkpro" data-slide-to="6"></li>
-                                    <!--<li data-target="#carousel-coarkpro" data-slide-to="7"></li>-->
-                                </ol>
-
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <img src="img/slider/1.jpg" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3>Caption Text</h3>
+                <!-- .hero-slider -->
+                <!--                <div class="container">
+                                    <div class="row-fluid">
+                                                                <div class="col-md-2 col-md-offset-1">
+                                                                    <div id="logo" class="wow pulse" style="" data-wow-iteration="infinite" data-wow-duration="1000ms"></div>
+                                                                </div>
+                                        <div class="col-md-8 col-md-offset-2 intro-lead-in">Bienvenido a CoArkPro!</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 col-md-offset-1">            
+                                            <div id="carousel-coarkpro" class="carousel slide" data-ride="carousel" style="border-width: 6px; border-style: outset;">
+                                                 Indicators 
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carousel-coarkpro" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carousel-coarkpro" data-slide-to="1"></li>
+                                                    <li data-target="#carousel-coarkpro" data-slide-to="2"></li>
+                                                    <li data-target="#carousel-coarkpro" data-slide-to="3"></li>
+                                                    <li data-target="#carousel-coarkpro" data-slide-to="4"></li>
+                                                    <li data-target="#carousel-coarkpro" data-slide-to="5"></li>
+                                                    <li data-target="#carousel-coarkpro" data-slide-to="6"></li>
+                                                    <li data-target="#carousel-coarkpro" data-slide-to="7"></li>
+                                                </ol>
+                
+                                                 Wrapper for slides 
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <img src="img/slider/1.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            <h3>Caption Text</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img src="img/slider/2.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            <h3>Caption Text</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img src="img/slider/3.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            <h3>Caption Text</h3>
+                                                        </div>
+                                                    </div>                                    
+                                                    <div class="item">
+                                                        <img src="img/slider/4.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            <h3>Caption Text</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img src="img/slider/5.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            <h3>Caption Text</h3>
+                                                        </div>
+                                                    </div>
+                                                                                        <div class="item">
+                                                                                            <img src="img/slider/8.jpg" alt="...">
+                                                                                            <div class="carousel-caption">
+                                                                                                <h3>Caption Text</h3>
+                                                                                            </div>
+                                                                                        </div>
+                                                    <div class="item">
+                                                        <img src="img/slider/9.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            <h3>Caption Text</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img src="img/slider/10.jpg" alt="...">
+                                                        <div class="carousel-caption">
+                                                            <h3>Caption Text</h3>
+                                                        </div>
+                                                    </div>                                    
+                                                </div>
+                
+                                                 Controls 
+                                                <a class="left carousel-control" href="#carousel-coarkpro" role="button" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                                </a>
+                                                <a class="right carousel-control" href="#carousel-coarkpro" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                                </a>
+                                            </div>  Carousel 
+                                            <h1 class="brand-heading">¿Qu&eacute; necesitas?</h1>
+                                            <a href="#about" class="btn btn-circle page-scroll">
+                                                <i class="fa fa-angle-double-down animated"></i>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="item">
-                                        <img src="img/slider/2.jpg" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3>Caption Text</h3>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="img/slider/3.jpg" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3>Caption Text</h3>
-                                        </div>
-                                    </div>                                    
-                                    <div class="item">
-                                        <img src="img/slider/4.jpg" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3>Caption Text</h3>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="img/slider/5.jpg" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3>Caption Text</h3>
-                                        </div>
-                                    </div>
-                                    <!--                                    <div class="item">
-                                                                            <img src="img/slider/8.jpg" alt="...">
-                                                                            <div class="carousel-caption">
-                                                                                <h3>Caption Text</h3>
-                                                                            </div>
-                                                                        </div>-->
-                                    <div class="item">
-                                        <img src="img/slider/9.jpg" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3>Caption Text</h3>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <img src="img/slider/10.jpg" alt="...">
-                                        <div class="carousel-caption">
-                                            <h3>Caption Text</h3>
-                                        </div>
-                                    </div>                                    
-                                </div>
-
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-coarkpro" role="button" data-slide="prev">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                                <a class="right carousel-control" href="#carousel-coarkpro" role="button" data-slide="next">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div> <!-- Carousel -->
-                            <h1 class="brand-heading">¿Qu&eacute; necesitas?</h1>
-                            <a href="#about" class="btn btn-circle page-scroll">
-                                <i class="fa fa-angle-double-down animated"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                                </div>-->
             </div>
         </header>
 
@@ -278,6 +367,8 @@
 
     </body>
     <script src="js/wow.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
     <script>
         new WOW().init();
     </script>
