@@ -37,10 +37,10 @@
         <!-- Navigation -->
         <nav class="navbar site-header navbar-fixed-top" role="navigation">
             <div class="container">
-                <a href="#page-top" id="branding">
+                <a href="#page-top" class="page-scroll" id="branding">
                     <img src="img/logo.png" alt="" class="logo">
                     <div class="logo-text">
-                        <h1 class="site-title">Soluciones</h1>
+                        <h4 class="site-title">Soluciones</h4>
                         <small class="site-description">Tagline goes here</small>
                     </div>
                 </a> <!-- #branding -->
@@ -49,23 +49,17 @@
                 <div class="main-navigation">
                     <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
                     <ul class="menu">
-                        <!--                        <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
-                                                <li class="menu-item"><a href="news.html">News</a></li>
-                                                <li class="menu-item"><a href="about.html">About</a></li>
-                                                <li class="menu-item"><a href="project.html">our Projects</a></li>
-                                                <li class="menu-item"><a href="contact.html">Contact</a></li>-->
-
                         <li class="menu-item current-menu-item">
                             <a class="page-scroll" href="#page-top">Inicio</a>
                         </li>
                         <li class="menu-item">
-                            <a class="page-scroll" href="#about">Nosotros</a>
+                            <a class="page-scroll" href="#aboutus">Nosotros</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="page-scroll" href="#projects">Proyectos</a>                            
                         </li>
                         <li class="menu-item">
                             <a class="page-scroll" href="#services">Servicios</a>
-                        </li>
-                        <li class="menu-item">
-                            <a class="page-scroll" href="#projects">Proyectos</a>
                         </li>
                         <li class="menu-item">
                             <a class="page-scroll" href="#contact">Contacto</a>
@@ -76,42 +70,6 @@
                 <div class="mobile-navigation"></div>
             </div>
         </nav>
-
-        <!--        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                                <i class="fa fa-bars"></i>
-                            </button>
-                            <a class="navbar-brand page-scroll" href="#page-top">
-                                <i class="fa fa-play-circle"></i>  <span class="light">Site</span> 
-                                <div id="logo" class="wow pulse" style="float: right;" data-wow-iteration="10" data-wow-duration="1000ms"></div>
-                                <span class="blue">CoArkPro</span>
-                            </a>
-                        </div>
-        
-                         Collect the nav links, forms, and other content for toggling 
-                        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                            <ul class="nav navbar-nav">
-                                 Hidden li included to remove active class from about link when scrolled up past about section 
-                                <li class="hidden menu-item">
-                                    <a href="#page-top"></a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="page-scroll" href="#about">Nosotros</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="page-scroll" href="#services">Servicios</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a class="page-scroll" href="#contact">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                         /.navbar-collapse 
-                    </div>
-                     /.container 
-                </nav>-->
 
         <div class="hero hero-slider">
             <ul class="slides">
@@ -159,161 +117,457 @@
         </div>
 
         <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body">
-                <!-- .hero-slider -->
-                <!--                <div class="container">
-                                    <div class="row-fluid">
-                                                                <div class="col-md-2 col-md-offset-1">
-                                                                    <div id="logo" class="wow pulse" style="" data-wow-iteration="infinite" data-wow-duration="1000ms"></div>
-                                                                </div>
-                                        <div class="col-md-8 col-md-offset-2 intro-lead-in">Bienvenido a CoArkPro!</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-10 col-md-offset-1">            
-                                            <div id="carousel-coarkpro" class="carousel slide" data-ride="carousel" style="border-width: 6px; border-style: outset;">
-                                                 Indicators 
-                                                <ol class="carousel-indicators">
-                                                    <li data-target="#carousel-coarkpro" data-slide-to="0" class="active"></li>
-                                                    <li data-target="#carousel-coarkpro" data-slide-to="1"></li>
-                                                    <li data-target="#carousel-coarkpro" data-slide-to="2"></li>
-                                                    <li data-target="#carousel-coarkpro" data-slide-to="3"></li>
-                                                    <li data-target="#carousel-coarkpro" data-slide-to="4"></li>
-                                                    <li data-target="#carousel-coarkpro" data-slide-to="5"></li>
-                                                    <li data-target="#carousel-coarkpro" data-slide-to="6"></li>
-                                                    <li data-target="#carousel-coarkpro" data-slide-to="7"></li>
-                                                </ol>
-                
-                                                 Wrapper for slides 
-                                                <div class="carousel-inner">
-                                                    <div class="item active">
-                                                        <img src="img/slider/1.jpg" alt="...">
-                                                        <div class="carousel-caption">
-                                                            <h3>Caption Text</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img src="img/slider/2.jpg" alt="...">
-                                                        <div class="carousel-caption">
-                                                            <h3>Caption Text</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img src="img/slider/3.jpg" alt="...">
-                                                        <div class="carousel-caption">
-                                                            <h3>Caption Text</h3>
-                                                        </div>
-                                                    </div>                                    
-                                                    <div class="item">
-                                                        <img src="img/slider/4.jpg" alt="...">
-                                                        <div class="carousel-caption">
-                                                            <h3>Caption Text</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img src="img/slider/5.jpg" alt="...">
-                                                        <div class="carousel-caption">
-                                                            <h3>Caption Text</h3>
-                                                        </div>
-                                                    </div>
-                                                                                        <div class="item">
-                                                                                            <img src="img/slider/8.jpg" alt="...">
-                                                                                            <div class="carousel-caption">
-                                                                                                <h3>Caption Text</h3>
-                                                                                            </div>
-                                                                                        </div>
-                                                    <div class="item">
-                                                        <img src="img/slider/9.jpg" alt="...">
-                                                        <div class="carousel-caption">
-                                                            <h3>Caption Text</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img src="img/slider/10.jpg" alt="...">
-                                                        <div class="carousel-caption">
-                                                            <h3>Caption Text</h3>
-                                                        </div>
-                                                    </div>                                    
-                                                </div>
-                
-                                                 Controls 
-                                                <a class="left carousel-control" href="#carousel-coarkpro" role="button" data-slide="prev">
-                                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                                </a>
-                                                <a class="right carousel-control" href="#carousel-coarkpro" role="button" data-slide="next">
-                                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                                </a>
-                                            </div>  Carousel 
-                                            <h1 class="brand-heading">¿Qu&eacute; necesitas?</h1>
-                                            <a href="#about" class="btn btn-circle page-scroll">
-                                                <i class="fa fa-angle-double-down animated"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>-->
-            </div>
-        </header>
+
+
+        <!--<section id="aboutus" class="content-section">-->
+        <section id="aboutus" class="content-section">
+            <div class="aboutus-section">
+                <div class="page">
+                    <div class="container">                                    
+                        <h1 class="brand-heading">Confianza y Compromiso</h1>
+                        <div class="row">
+                            <div class="col-lg-12 text-justify">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-xs-12">
+                                <figure class=""><img src="img/team.jpg" class="img-responsive" alt="Single image"></figure>
+                            </div>
+                            <div class="col-lg-6 col-xs-12 text-justify">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 text-justify">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur quis autem vel eum iure.</p>
+                            </div>
+                        </div>
+                        <hr class="separator">
+                        <h2 class="section-title">Que Podemos Hacer Por Ti?</h2>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="feature-numbered">
+                                    <div class="num">1</div>
+                                    <h2 class="feature-title">accusamus iusto</h2>
+                                    <p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="feature-numbered">
+                                    <div class="num">2</div>
+                                    <h2 class="feature-title">accusamus iusto</h2>
+                                    <p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="feature-numbered">
+                                    <div class="num">3</div>
+                                    <h2 class="feature-title">accusamus iusto</h2>
+                                    <p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="feature-numbered">
+                                    <div class="num">4</div>
+                                    <h2 class="feature-title">accusamus iusto</h2>
+                                    <p>Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="separator">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="section-title">Testimonios</h2>
+                                <div class="testimonial-slider">
+                                    <ul class="slides text-justify">
+                                        <li>
+                                            <blockquote>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorum nostrum suscipit. Sunt tenetur accusantium eligendi illo perferendis. Commodi iste nihil eius, doloremque aperiam iure repellat sequi enim sint similique!</p>
+                                                <cite>Jessica Waton</cite>
+                                            </blockquote>
+                                        </li>
+                                        <li>
+                                            <blockquote>
+                                                <p>Ut ullam sed accusamus aliquam rerum tempora ab voluptatibus, nostrum vitae nesciunt quam atque! Tempora dolorem quas pariatur debitis nulla, molestiae, obcaecati voluptatibus quisquam, facilis quis sint eos, corporis assumenda.</p>
+                                                <cite>Jessica Waton</cite>
+                                            </blockquote>
+                                        </li>
+                                        <li>
+                                            <blockquote>
+                                                <p>Fuga provident modi illo dolorum, neque labore natus ratione, totam id sequi vero repudiandae velit nemo nobis corporis tenetur. Magnam velit est cumque incidunt unde delectus labore inventore eaque vitae?</p>
+                                                <cite>Jessica Waton</cite>
+                                            </blockquote>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#services" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!--</section>-->
 
         <!-- About Section -->
-        <section id="about" class="container content-section text-center">
-            <div class="row">
-                <h2 class="wow fadeInLeft" data-wow-delay="0.5s">¿Qui&eacute;nes Somos?</h2>
-            </div>
-            <div class="row">  
-                <div class="col-lg-2 center-block">
-                    <i class="wow fadeInLeft fa fa-cogs fa-5x" data-wow-delay="0.7s"></i>                    
+        <section id="projects" class="content-section text-center">
+            <!--            <div class="row">
+                            <h2 class="wow fadeInLeft" data-wow-delay="0.5s">¿Qui&eacute;nes Somos?</h2>
+                        </div>
+                        <div class="row">  
+                            <div class="col-lg-2 center-block">
+                                <i class="wow fadeInLeft fa fa-cogs fa-5x" data-wow-delay="0.7s"></i>                    
+                            </div>
+                            <div class="col-lg-10">
+                                <p class="wow fadeInRight" data-wow-delay="1.2s">Somos una empresa dedicada a la construcci&oacute;n y arquitectura principalmente, tambi&eacute;n contamos con el soporte legal y tecn&oacute;logico, ofrecemos todos los servicios relacionados a estos rubros, desde el suministro de recursos, ejecuci&oacute;n de obras, mantenimientos y control del proyecto.</p>
+                            </div>                
+                        </div>
+                        <div class="row">       
+                            <div class="wow fadeInRight col-lg-2 center-block">
+                                <i class="wow fadeInLeft fa fa-gavel fa-5x" data-wow-delay="0.8s"></i>
+                            </div>
+                            <div class="col-lg-10">
+                                <p class="wow fadeInLeft" data-wow-delay="1.7s">Adem&aacute;s se cuenta con alta experiencia en el ambito legal sobre construcciones, realizamos las gestiones legales necesarias para la ejecuci&oacute;n de las obras.</p>
+                            </div>                
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-2 center-block">
+                                <i class="wow fadeInLeft fa fa-connectdevelop fa-5x" data-wow-delay="0.9s"></i>
+                            </div>  
+                            <div class="col-lg-10">
+                                <p class="wow fadeInRight" data-wow-delay="2.2s">Contamos con un equipo especializado de Ingenieros Civiles, Ingenieros del Software, Arquitectos y Abogados a su disposici&oacute;n. </p>
+                            </div>                              
+                        </div>-->
+            <div class="page">
+                <div class="container">
+                    <h2 class="entry-title">adipiscing elit sed do eiusmod tempor incididunt.</h2>
+                    <p>Dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+
+                    <div class="filter-links filterable-nav">
+                        <select class="mobile-filter">
+                            <option value="*">Show all</option>
+                            <option value=".skyscraper">skyscraper</option>
+                            <option value=".shopping-center">shopping-center</option>
+                            <option value=".apartment">apartment</option>
+                        </select>
+                        <a href="#" class="current wow fadeInRight" data-filter="*">Show all</a>
+                        <a href="#" class="wow fadeInRight" data-wow-delay=".2s" data-filter=".skyscraper">skyscraper</a>
+                        <a href="#" class="wow fadeInRight" data-wow-delay=".4s" data-filter=".shopping-center">shopping-center</a>
+                        <a href="#" class="wow fadeInRight" data-wow-delay=".6s" data-filter=".apartment">apartment</a>
+                    </div>
+
+                    <div class="filterable-items">
+                        <div class="project-item filterable-item shopping-center">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-1.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">Lorem ipsum dolor sit amet</a></h2>
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-item filterable-item skyscrapper">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-2.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">Consectetur adipisicing elit</a></h2>
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-item filterable-item skyscraper">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-3.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">Repellat fugit tenetur</a></h2> 
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-item filterable-item apartment">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-4.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">Asperiores quas voluptatem</a></h2>
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-item filterable-item skyscrapper">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-5.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">Ex quos ab perspiciatis</a></h2>
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-item filterable-item skyscrapper">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-6.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">Natus dolores ad et ipsam</a></h2>
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-item filterable-item shopping-center">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-7.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">Hic nisi. Animi placeat</a></h2>
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-item filterable-item skyscrapper">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-8.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">Obcaecati quam</a></h2>
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-item filterable-item skyscrapper">
+                            <figure class="featured-image">
+                                <a href="project-single.html"><img src="dummy/large-thumb-9.jpg" alt="#"></a>
+                                <figcaption>
+                                    <h2 class="project-title"><a href="project-single.html">quam exercitationem</a></h2>
+                                    <p class="project-subtotle">Maecenas dictum suscipit</p>
+                                    <p>Sed ut perspiciatis unde omnis iste natus accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                                    <!--<a href="#" class="more-link"><img src="img/arrow.png" alt=""></a>-->
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-10">
-                    <p class="wow fadeInRight" data-wow-delay="1.2s">Somos una empresa dedicada a la construcci&oacute;n y arquitectura principalmente, tambi&eacute;n contamos con el soporte legal y tecn&oacute;logico, ofrecemos todos los servicios relacionados a estos rubros, desde el suministro de recursos, ejecuci&oacute;n de obras, mantenimientos y control del proyecto.</p>
-                </div>                
-            </div>
-            <div class="row">       
-                <div class="wow fadeInRight col-lg-2 center-block">
-                    <i class="wow fadeInLeft fa fa-gavel fa-5x" data-wow-delay="0.8s"></i>
-                </div>
-                <div class="col-lg-10">
-                    <p class="wow fadeInLeft" data-wow-delay="1.7s">Adem&aacute;s se cuenta con alta experiencia en el ambito legal sobre construcciones, realizamos las gestiones legales necesarias para la ejecuci&oacute;n de las obras.</p>
-                </div>                
-            </div>
-            <div class="row">
-                <div class="col-lg-2 center-block">
-                    <i class="wow fadeInLeft fa fa-connectdevelop fa-5x" data-wow-delay="0.9s"></i>
-                </div>  
-                <div class="col-lg-10">
-                    <p class="wow fadeInRight" data-wow-delay="2.2s">Contamos con un equipo especializado de Ingenieros Civiles, Ingenieros del Software, Arquitectos y Abogados a su disposici&oacute;n. </p>
-                </div>                              
-            </div>
+            </div> <!-- .page -->
         </section>
 
-        <!-- Download Section -->
+        <!-- Service Section -->
         <section id="services" class="content-section text-center">
             <div class="services-section">
                 <div class="container">
-                    <div class="row-fluid">
-                        <h2>Servicios en <span class="blue">CoArkPro</span></h2>
-                    </div>                    
-                    <div class="row-fluid">                        
-                        <div class="col-lg-3">                        
-                            <h3>Construcci&oacute;n</h3>
-                            <div class="service-construccion"></div>
-                            <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Ver Servicios</a>
+                    <h2 class="entry-title">Rubros Especializados</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 portfolio-item">
+                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/image-1.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Round Icons</h4>
+                                <p class="text-muted">Graphic Design</p>
+                            </div>
                         </div>
-                        <div class="col-lg-3">                        
-                            <h3>Arquitectura</h3>
-                            <div class="service-arquitectura"></div>
-                            <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Ver Servicios</a>
+                        <div class="col-md-3 col-sm-6 portfolio-item">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/image-2.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Startup Framework</h4>
+                                <p class="text-muted">Website Design</p>
+                            </div>
                         </div>
-                        <div class="col-lg-3">                        
-                            <h3>Legal</h3>
-                            <div class="service-legal"></div>
-                            <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Ver Servicios</a>
+                        <div class="col-md-3 col-sm-6 portfolio-item">
+                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/image-3.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Treehouse</h4>
+                                <p class="text-muted">Website Design</p>
+                            </div>
                         </div>
-                        <div class="col-lg-3">                        
-                            <h3>Tecnolog&iacute;a</h3>
-                            <div class="service-tecnologia"></div>
-                            <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Ver Servicios</a>
+                        <div class="col-md-3 col-sm-6 portfolio-item">
+                            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/image-1.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>Golden</h4>
+                                <p class="text-muted">Website Design</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- Portfolio Modal 1 -->
+                    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="close-modal" data-dismiss="modal">
+                                <div class="lr">
+                                    <div class="rl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="modal-body">
+                                            <!-- Project Details Go Here -->
+                                            <h2>Project Name</h2>
+                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <img class="img-responsive" src="img/portfolio/roundicons-free.png" alt="">
+                                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                            <p>
+                                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                                            <ul class="list-inline">
+                                                <li>Date: July 2014</li>
+                                                <li>Client: Round Icons</li>
+                                                <li>Category: Graphic Design</li>
+                                            </ul>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Modal 2 -->
+                    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="close-modal" data-dismiss="modal">
+                                <div class="lr">
+                                    <div class="rl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="modal-body">
+                                            <h2>Project Heading</h2>
+                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                                            <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
+                                            <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Modal 3 -->
+                    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="close-modal" data-dismiss="modal">
+                                <div class="lr">
+                                    <div class="rl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="modal-body">
+                                            <!-- Project Details Go Here -->
+                                            <h2>Project Name</h2>
+                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                                            <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
+                                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Modal 4 -->
+                    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="close-modal" data-dismiss="modal">
+                                <div class="lr">
+                                    <div class="rl">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <div class="modal-body">
+                                            <!-- Project Details Go Here -->
+                                            <h2>Project Name</h2>
+                                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                                            <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                    <div class="row-fluid">
+                                            <h2>Servicios en <span class="blue">CoArkPro</span></h2>
+                                        </div>                    
+                                        <div class="row-fluid">                        
+                                            <div class="col-lg-3">                        
+                                                <h3>Construcci&oacute;n</h3>
+                                                <div class="service-construccion"></div>
+                                                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Ver Servicios</a>
+                                            </div>
+                                            <div class="col-lg-3">                        
+                                                <h3>Arquitectura</h3>
+                                                <div class="service-arquitectura"></div>
+                                                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Ver Servicios</a>
+                                            </div>
+                                            <div class="col-lg-3">                        
+                                                <h3>Legal</h3>
+                                                <div class="service-legal"></div>
+                                                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Ver Servicios</a>
+                                            </div>
+                                            <div class="col-lg-3">                        
+                                                <h3>Tecnolog&iacute;a</h3>
+                                                <div class="service-tecnologia"></div>
+                                                <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Ver Servicios</a>
+                                            </div>
+                                        </div>-->
                 </div>
             </div>
         </section>
