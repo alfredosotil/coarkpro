@@ -284,9 +284,9 @@ a:focus {
 .services-section {
   width: 100%;
   /*padding: 50px 0;*/
-  color: black;
-  background: url(../img/intro-bg2.jpg) no-repeat center center scroll;
-  background-color: black;
+  color: white;
+  /*background: url(../img/bg-2.jpg) no-repeat center center scroll;*/
+  background-color: gray;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -422,9 +422,9 @@ body {
   color: white;
 }
 #branding .site-description {
-  font-size: 11px;
-  font-size: 0.78571429em;
-  color: #585858;
+  font-size: 15px;
+  font-size: 1.07142857em;
+  color: white;
 }
 .main-navigation {
   float: right;
@@ -956,6 +956,7 @@ body {
   margin: 0;
 }
 #services .portfolio-item .portfolio-caption {
+  color: gray;
   max-width: 400px;
   margin: 0 auto;
   background-color: white;

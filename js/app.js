@@ -1,88 +1,94 @@
-(function($, document, window){
-	
-	$(document).ready(function(){
+(function ($, document, window) {
 
-		// Cloning main navigation for mobile menu
-		$(".mobile-navigation").append($(".main-navigation .menu").clone());
+    $(document).ready(function () {
 
-		// Mobile menu toggle 
-		$(".menu-toggle").click(function(){
-			$(".mobile-navigation").slideToggle();
-		});
+        // Cloning main navigation for mobile menu
+        $(".mobile-navigation").append($(".main-navigation .menu").clone());
 
-		// hero-slider
-		$(".hero-slider").flexslider({
-			controlNav: false,
-			directionNav: true,
-			animation: "fade",
-			prevText:'<i class="fa fa-angle-left"></i>',
-			nextText:'<i class="fa fa-angle-right"></i>',
-		});
+        // Mobile menu toggle 
+        $(".menu-toggle").click(function () {
+            $(".mobile-navigation").slideToggle();
+        });
 
-		$(".testimonial-slider").flexslider({
-			controlNav: true,
-			directionNav: false,
-			animation: "slide"
-		});
+        // hero-slider
+        $(".hero-slider").flexslider({
+            controlNav: false,
+            directionNav: true,
+            animation: "fade",
+            slideshowSpeed: 1500,
+            animationSpeed: 500,
+//            pausePlay: true,
+//            pauseText: 'Pause',
+//            playText: 'Play',
+            pauseOnHover: true,
+            prevText: '<i class="fa fa-angle-left"></i>',
+            nextText: '<i class="fa fa-angle-right"></i>',
+        });
 
-	    if( $(".map").length ) {
-			$('.map').gmap3({
-				map: {
-					options: {
-						maxZoom: 14 
-					}  
-				},
-				marker:{
-					address: "40 Sibley St, Detroit",
-				}
-			},
-			"autofit" );
-	    	
-	    }
-	});
+        $(".testimonial-slider").flexslider({
+            controlNav: true,
+            directionNav: false,
+            animation: "slide"
+        });
 
-	$(window).load(function(){
-		var $container = $('.filterable-items');
+        if ($(".map").length) {
+            $('.map').gmap3({
+                map: {
+                    options: {
+                        maxZoom: 14
+                    }
+                },
+                marker: {
+                    address: "40 Sibley St, Detroit",
+                }
+            },
+            "autofit");
 
-	    $container.isotope({
-	        filter: '*',
-	        layoutMode: 'fitRows',
-	        animationOptions: {
-	            duration: 750,
-	            easing: 'linear',
-	            queue: false
-	        }
-	    });
+        }
+    });
 
-	    $('.filterable-nav a').click(function(e){
-	    	e.preventDefault();
-	        $('.filterable-nav .current').removeClass('current');
-	        $(this).addClass('current');
+    $(window).load(function () {
+        var $container = $('.filterable-items');
 
-	        var selector = $(this).attr('data-filter');
-	        $container.isotope({
-	            filter: selector,
-	            animationOptions: {
-	                duration: 750,
-	                easing: 'linear',
-	                queue: false
-	            }
-	         });
-	         return false;
-	    });
-	    $('.mobile-filter').change(function(){
+        $container.isotope({
+            filter: '*',
+            layoutMode: 'fitRows',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
 
-	        var selector = $(this).val();
-	        $container.isotope({
-	            filter: selector,
-	            animationOptions: {
-	                duration: 750,
-	                easing: 'linear',
-	                queue: false
-	            }
-	         });
-	         return false;
-	    });
-	});
+        $('.filterable-nav a').click(function (e) {
+            e.preventDefault();
+            $('.filterable-nav .current').removeClass('current');
+            $(this).addClass('current');
+
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        });
+        $('.mobile-filter').change(function () {
+
+            var selector = $(this).val();
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        });
+    });
 
 })(jQuery, document, window);
