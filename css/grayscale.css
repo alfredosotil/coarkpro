@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 10px;
+  margin: 0 0 30px;
   /*text-transform: uppercase;*/
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -285,7 +285,7 @@ a:focus {
     padding-top: 0px;
   }
   .services-section {
-    padding: 100px 0;
+    padding: 30px 0;
   }
   #map {
     height: 400px;
@@ -501,9 +501,9 @@ body {
   height: 0;
 }
 .hero-slider .slides li {
-  min-height: 555px;
+  min-height: 300px;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 .hero-slider .slide-title {
   font-size: 36px;
@@ -538,7 +538,7 @@ body {
 @media screen and (min-width: 768px) {
   .hero-slider .flex-direction-nav {
     width: 750px;
-    bottom: 100px;
+    bottom: 50px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -587,6 +587,7 @@ body {
 .page .entry-title {
   font-size: 36px;
   font-size: 2.57142857em;
+  margin-bottom: 35px;
   list-style: 3px;
   font-weight: 300;
   text-transform: uppercase;
@@ -891,7 +892,7 @@ body {
 #services .portfolio-item .portfolio-link {
   display: block;
   position: relative;
-  max-width: 400px;
+  max-width: 200px;
   margin: 0 auto;
 }
 #services .portfolio-item .portfolio-link img {
@@ -928,7 +929,7 @@ body {
   margin: 0;
 }
 #services .portfolio-item .portfolio-caption {
-  color: gray;
+  color: #233f6f;
   max-width: 400px;
   margin: 0 auto;
   background-color: white;
