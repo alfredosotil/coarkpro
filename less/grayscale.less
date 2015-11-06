@@ -6,7 +6,7 @@ body {
     height: 100%;
     font-family : @primary-font;
     color: white;
-    background-color: gray;
+    background-color: @secondary-color;
 }
 
 html {
@@ -93,7 +93,7 @@ a {
     border-bottom: 1px solid fade(white, 30%);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: gray;
+    background-color: @secondary-color;
     .navbar-brand {
         font-weight: 700;
         &:focus {
@@ -134,7 +134,7 @@ a {
                 a {
                     background-color: fade(white, 30%);
                     &:hover {
-                        color: gray;
+                        color: @secondary-color;
                     }
                 }
             }
@@ -186,7 +186,7 @@ a {
     text-align: center;
     color: black;
     background: url(../img/intro-bg.jpg) no-repeat bottom center;
-    /*background-color: gray;*/
+    /*background-color: @secondary-color;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -246,7 +246,7 @@ a {
         &:focus {
         outline: none;
         color: @bg-color;
-        background: fade(gray, 10%);
+        background: fade(@secondary-color, 10%);
     }
     i.animated {
         -webkit-transition-property: -webkit-transform;
@@ -277,7 +277,7 @@ a {
     /*padding: 50px 0;*/ 
     color: white;
     /*background: url(../img/bg-2.jpg) no-repeat center center scroll;*/
-    background-color: gray;
+    background-color: @secondary-color;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -389,7 +389,7 @@ body {
 }
 
 .site-header{
-    background-color: gray;
+    background-color: @secondary-color;
     .clearfix;
 }
 
@@ -506,8 +506,8 @@ body {
 
         li{
             min-height: 300px; 
-            background-size: cover;
-            background-position: center;
+            background-size: 100% 100%;
+            /*background-position: center;*/
 
         }
     }
@@ -777,7 +777,7 @@ body {
             width: 20px;
             height: 20px;
             position: absolute;
-            background: gray;
+            background: @secondary-color;
             transition: .3s ease;
         }
 
