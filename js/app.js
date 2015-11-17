@@ -45,6 +45,7 @@ $(document).ready(function () {
 //        $('#wrapper').append('<span id="load">LOADING...</span>');
 //        $('#load').fadeIn('normal');
 //        window.location.hash = $(this).attr('href').substr(0, $(this).attr('href').length - 5);
+        window.scrollTo(0, 0); //scroll to top
         function loadContent() {
             $('#content').load(toLoad, '', showNewContent());
         }
@@ -54,7 +55,7 @@ $(document).ready(function () {
 //        function hideLoader() {
 //            $('#load').fadeOut('normal');
 //        }
-        
+
         return false;
     });
     $('a.page-scroll').bind('click', function (event) {
@@ -78,7 +79,24 @@ $(document).ready(function () {
 //            playText: 'Play',
         pauseOnHover: true,
         prevText: '<i class="fa fa-angle-left"></i>',
-        nextText: '<i class="fa fa-angle-right"></i>',
+        nextText: '<i class="fa fa-angle-right"></i>'
+    });
+    $("#clients").owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        autoplayHoverPause: true
+    });   
+    
+    $("#products").owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 4500,
+        autoplayHoverPause: true
     });
 });
 
