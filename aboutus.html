@@ -3,13 +3,13 @@
     <div class="aboutus-section">
         <div class="page">
             <div class="container">                                    
-                <h1 class="brand-heading text-center">Confianza y Compromiso</h1>
+                <h1  class="wowcontent flipInY brand-heading text-center" data-wow-duration="1s" data-wow-delay="1000ms">Confianza y Compromiso</h1>
                 <div class="row">
                     <div class="col-lg-6 col-xs-12">
                         <figure class=""><img src="img/team.jpg" class="img-responsive" alt="Single image"></figure>
                     </div>
                     <div class="col-lg-6 col-xs-12 text-justify">
-                        <p>Somoss una empresa que brinda soluciones especializadas en la industria de la construcción y arquitectura, la búsqueda inmobiliaria en los sectores residenciales, industriales y de telecomunicaciones, desarrollo informático y arquitectura de datos, soporte legal en derecho administrativo y derecho civil.</p>
+                        <p>Somos una empresa que brinda soluciones especializadas en la industria de la construcción y arquitectura, la búsqueda inmobiliaria en los sectores residenciales, industriales y de telecomunicaciones, desarrollo informático y arquitectura de datos, soporte legal en derecho administrativo y derecho civil.</p>
                         <p>Nuestra Misión es satisfacer las necesidades de nuestros clientes realizando el mayor esfuerzo y motivación profesional.</p>
                         <!--                                <p>Nuestra visión es ser reconocidos como una excelente opcion especialistas en soluciones de Ingeniería e Infraestructura.</p>-->
                     </div>
@@ -19,74 +19,22 @@
 
                     </div>
                 </div>
-                <hr class="separator">
-                <h2 class="section-title text-center">Que Podemos Hacer Por Ti?</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="feature-numbered">
-                            <div class="num">1</div>
-                            <h2 class="feature-title">construccion y arquitectura</h2>
-                            <p class="text-justify">Brindamos soluciones y aplicaciones especializadas de productos relacionados a la impermeabilización de frentes húmedos en general, revestimientos industriales y residenciales, tecnología de concreto, arquitectura de interiores y remodelaciones, entre otras necesidades que podemos satisfacer en el desarrollo de proyectos en general.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature-numbered">
-                            <div class="num">2</div>
-                            <h2 class="feature-title">tecnologia de la informacion</h2>
-                            <p class="text-justify">Asesoramiento, desarrollo  e implementacion de soluciones informáticas para el manejo de datos  y aplicaciones en general. Especialidades en tecnologias JAVA y bases de datos ORACLE</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="feature-numbered">
-                            <div class="num">3</div>
-                            <h2 class="feature-title">inmobiliaria y legal</h2>
-                            <p class="text-justify">Atención de necesidades inmobiliarias en los sectores residenciales, comerciales, industriales y de telecomunicaciones, brindamos  soporte legal en las áreas del Derecho Administrativo y Civil; manejo y solución de conflictos, negociación  en general.</p>
-                        </div>
-                    </div>
-                    <!--                            <div class="col-md-3">
-                                                    <div class="feature-numbered">
-                                                        <div class="num">4</div>
-                                                        <h2 class="feature-title">Legal</h2>
-                                                        <p class="text-justify">Sed ut perspiciatis unde omnis iste natus aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.</p>
-                                                    </div>
-                                                </div>-->
-                </div>
-
-                <hr class="separator">
-
-                <!--                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <h2 class="section-title">Testimonios</h2>
-                                                <div class="testimonial-slider">
-                                                    <ul class="slides text-justify">
-                                                        <li>
-                                                            <blockquote>
-                                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, dolorum nostrum suscipit. Sunt tenetur accusantium eligendi illo perferendis. Commodi iste nihil eius, doloremque aperiam iure repellat sequi enim sint similique!</p>
-                                                                <cite>Jessica Waton</cite>
-                                                            </blockquote>
-                                                        </li>
-                                                        <li>
-                                                            <blockquote>
-                                                                <p>Ut ullam sed accusamus aliquam rerum tempora ab voluptatibus, nostrum vitae nesciunt quam atque! Tempora dolorem quas pariatur debitis nulla, molestiae, obcaecati voluptatibus quisquam, facilis quis sint eos, corporis assumenda.</p>
-                                                                <cite>Jessica Waton</cite>
-                                                            </blockquote>
-                                                        </li>
-                                                        <li>
-                                                            <blockquote>
-                                                                <p>Fuga provident modi illo dolorum, neque labore natus ratione, totam id sequi vero repudiandae velit nemo nobis corporis tenetur. Magnam velit est cumque incidunt unde delectus labore inventore eaque vitae?</p>
-                                                                <cite>Jessica Waton</cite>
-                                                            </blockquote>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>-->
-                <!--                                                <a href="#services" class="btn btn-circle page-scroll">
-                                                                    <i class="fa fa-angle-double-down animated"></i>
-                                                                </a>-->
-
+                <!--<hr class="separator">-->                
             </div>
         </div>
     </div>            
 </section>
 <!--</section>-->
+<script>
+    var wowcontent = new WOW(
+            {
+                boxClass: 'wowcontent',
+                animateClass: 'animated',
+//                    offset: 100,
+                mobile: true, // trigger animations on mobile devices (default is true)
+                live: true
+            }
+
+    );
+    wowcontent.init();
+</script>

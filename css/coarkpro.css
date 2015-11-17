@@ -252,7 +252,7 @@ a:focus {
   -moz-animation-timing-function: linear;
 }
 .content-section {
-  padding-top: 125px;
+  /*padding-top: 125px;*/
 }
 .services-section {
   width: 100%;
@@ -506,9 +506,9 @@ body {
   /*background-position: center;*/
 }
 .hero-slider .slide-title {
-  font-size: 36px;
-  font-size: 2.57142857em;
-  margin-top: 100px;
+  font-size: 16px;
+  font-size: 1.14285714em;
+  margin-top: 5px;
   letter-spacing: 3px;
 }
 .hero-slider .slide-title span {
@@ -521,7 +521,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero-slider .slide-title {
-    margin-top: 200px;
+    margin-top: 10px;
+    font-size: 26px;
+    font-size: 1.85714286em;
   }
 }
 .hero-slider .flex-direction-nav {
@@ -593,8 +595,8 @@ body {
   text-transform: uppercase;
 }
 .page p {
-  font-size: 16px;
-  font-size: 1.14285714em;
+  font-size: 22px;
+  font-size: 1.57142857em;
   line-height: 2;
 }
 .feature-numbered {
@@ -1175,4 +1177,4 @@ section {
     transform: scale(1);
   }
 }
-/*# sourceMappingURL=grayscale.css.map */
+/*# sourceMappingURL=coarkpro.css.map */

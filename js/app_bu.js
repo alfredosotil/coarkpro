@@ -11,42 +11,40 @@
         });
 
         // hero-slider
-//        $(".hero-slider").flexslider({
-//            controlNav: false,
-//            directionNav: true,
-//            animation: "fade",
-//            slideshowSpeed: 1500,
-//            animationSpeed: 500,
-////            pausePlay: true,
-////            pauseText: 'Pause',
-////            playText: 'Play',
-//            pauseOnHover: true,
-//            prevText: '<i class="fa fa-angle-left"></i>',
-//            nextText: '<i class="fa fa-angle-right"></i>',
-//        });
+        $(".hero-slider").flexslider({
+            controlNav: false,
+            directionNav: true,
+            animation: "fade",
+            slideshowSpeed: 1500,
+            animationSpeed: 500,
+//            pausePlay: true,
+//            pauseText: 'Pause',
+//            playText: 'Play',
+            pauseOnHover: true,
+            prevText: '<i class="fa fa-angle-left"></i>',
+            nextText: '<i class="fa fa-angle-right"></i>',
+        });
 
         $(".testimonial-slider").flexslider({
             controlNav: true,
             directionNav: false,
             animation: "slide"
         });
-        
-        
 
-//        if ($(".map").length) {
-//            $('.map').gmap3({
-//                map: {
-//                    options: {
-//                        maxZoom: 14
-//                    }
-//                },
-//                marker: {
-//                    address: "40 Sibley St, Detroit",
-//                }
-//            },
-//            "autofit");
-//
-//        }
+        if ($(".map").length) {
+            $('.map').gmap3({
+                map: {
+                    options: {
+                        maxZoom: 14
+                    }
+                },
+                marker: {
+                    address: "40 Sibley St, Detroit",
+                }
+            },
+            "autofit");
+
+        }
     });
 
     $(window).load(function () {
