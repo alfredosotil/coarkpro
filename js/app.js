@@ -1,8 +1,3 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
 // jQuery to collapse the navbar on scroll
 //$(window).scroll(function () {
@@ -15,14 +10,6 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(document).ready(function () {
-//    var animationDuration = "0.8" //Time for the whole animation to take place. measured per s. Decimals or integers are both valid, ensure to add the 0 when using decimal values.
-//
-//    var borderWidth = " 4px " //width of the border. measured in any valid css unit - px, %, etc
-//
-//    var backgroundColor = "white" //CSS value
-//
-//    var borderContent = ".border-content {position: absolute;width: 100%;height: 100%;top: 0%;left: 0%;}"
-//    $('.simultaneous').borderSimultaneous(animationDuration, borderWidth, "onhover", backgroundColor);
     // Cloning main navigation for mobile menu
     $(".mobile-navigation").append($(".main-navigation .menu").clone());
     // Mobile menu toggle 
@@ -83,6 +70,7 @@ $(document).ready(function () {
     });
     $("#clients").owlCarousel({
         items: 5,
+        autoWidth:true,
         loop: true,
         margin: 10,
         autoplay: true,
@@ -92,6 +80,7 @@ $(document).ready(function () {
     
     $("#products").owlCarousel({
         items: 5,
+        autoWidth:true,
         loop: true,
         margin: 10,
         autoplay: true,
