@@ -34,7 +34,7 @@ $(document).ready(function () {
 //        window.location.hash = $(this).attr('href').substr(0, $(this).attr('href').length - 5);
         window.scrollTo(0, 0); //scroll to top
         function loadContent() {
-            $('#content').load(toLoad, '', showNewContent());
+            $('#content').load(toLoad, showNewContent());
         }
         function showNewContent() {
             $('#content').show('normal');
@@ -84,7 +84,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 4500,
+        autoplayTimeout: 500,
         autoplayHoverPause: true
     });
 });
